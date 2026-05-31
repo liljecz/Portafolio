@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Jose Manuel Cruz Hoyo - Ingeniero en Informática especializado en desarrollo de software, automatización, infraestructura e Inteligencia Artificial.">
+  <meta name="keywords" content="Jose Cruz, CruzDev, Ingeniero en Informática, Automatización, Python, Next.js, Flutter, n8n, Infraestructura, Redes, Inteligencia Artificial">
+  <meta name="author" content="Jose Manuel Cruz Hoyo">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jose Cruz | Ingeniero en Informática & Software Developer">
+  <meta property="og:description" content="Explora el portafolio y competencias técnicas de Jose Cruz. Desarrollador de software, experto en automatización e infraestructura tecnológica.">
+  <meta property="og:image" content="assets/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Jose Cruz | Ingeniero en Informática & Software Developer">
+  <meta property="twitter:description" content="Explora el portafolio y competencias técnicas de Jose Cruz. Desarrollador de software, experto en automatización e infraestructura tecnológica.">
+
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Devicon for Tech Stack Icons -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <title>Jose Cruz | Ingeniero en Informática</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Jhey.dev Spotlight background follow cursor -->
+  <div class="spotlight"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="contact-toast" class="toast toast-success" role="alert" aria-live="polite">¡Mensaje enviado con éxito!</div>
+
+  <!-- Main Layout Grid -->
+  <div class="main-layout">
+    
+    <!-- Left Column (Sticky Sidebar) -->
+    <header class="left-col">
+      <div class="profile-info">
+        <div class="profile-avatar">
+          <img src="assets/profile.jpg" alt="Foto de perfil de Jose Manuel Cruz Hoyo">
+        </div>
+        <h1 class="profile-name">Jose Manuel Cruz Hoyo</h1>
+        <h2 class="profile-title">Ingeniero en Informática</h2>
+        <h3 class="profile-title" style="font-size: 0.9rem; font-weight: 500; opacity: 0.85;">
+          <span class="typing-text" data-words='["Especialista en Automatización.", "Arquitecto de Infraestructura.", "Desarrollador de Inteligencia Artificial."]'>Especialista en Automatización.</span>
+        </h3>
+        <p class="profile-desc">
+          Creo soluciones de software automatizadas, seguras y de alto rendimiento integrando inteligencia artificial, automatización y arquitecturas de red resilientes.
+        </p>
+        
+        <!-- Brittany Chiang Side Navigation -->
+        <nav class="side-nav" aria-label="Navegación lateral de secciones">
+          <ul>
+            <li>
+              <a href="#about" class="nav-item active">
+                <span class="nav-line"></span>
+                <span>Sobre Mí</span>
+              </a>
+            </li>
+            <li>
+              <a href="#experience" class="nav-item">
+                <span class="nav-line"></span>
+                <span>Experiencia</span>
+              </a>
+            </li>
+            <li>
+              <a href="#tech" class="nav-item">
+                <span class="nav-line"></span>
+                <span>Competencias</span>
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-item">
+                <span class="nav-line"></span>
+                <span>Proyectos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-item">
+                <span class="nav-line"></span>
+                <span>Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Left Sidebar Footer -->
+      <div class="left-footer">
+        <div class="theme-toggle-container">
+          <span>Tema</span>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema de color">
+            <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+            <svg id="moon-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+          </button>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/liljecz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub de Jose Manuel Cruz">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path></svg>
+          </a>
+          <a href="https://t.me/liljeczdev" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram de Jose Manuel Cruz">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/j.cruz0406?igsh=b3phYWVlajh2Nmxn" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram de Jose Manuel Cruz">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://wa.me/584168761102" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp/Teléfono de Jose Manuel Cruz">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Right Column (Scrolls Continuously) -->
+    <main class="right-col">
+      
+      <!-- Sobre Mí Section -->
+      <section class="about-section" id="about" aria-label="Sobre mí">
+        <div class="section-header-mobile">
+          <h2 class="section-title-mobile">Sobre Mí</h2>
+        </div>
+        <p>
+          Soy <span>Ingeniero en Informática</span> con una sólida trayectoria de 7 años optimizando e implementando infraestructuras tecnológicas robustas, combinada con 3 años dedicados al desarrollo de software y flujos de automatización inteligentes.
+        </p>
+        <p>
+          Mi enfoque se centra en crear soluciones de software eficientes que eliminen fricciones operativas y reduzcan tareas repetitivas, integrando tecnologías modernas como <span>Next.js, Flutter, Python e inteligencia artificial</span>.
+        </p>
+        <p>
+          Garantizo la estabilidad, seguridad y el escalamiento de los sistemas que administro, diseñando tanto la arquitectura de red subyacente en entornos Linux como las plataformas interactivas que interactúan directamente con los usuarios.
+        </p>
+      </section>
+
+      <!-- Experiencia Section -->
+      <section class="experience-section" id="experience" aria-label="Experiencia laboral">
+        <div class="section-header-mobile">
+          <h2 class="section-title-mobile">Experiencia</h2>
+        </div>
+        
+        <div class="experience-list">
+          <!-- Item 1 -->
+          <div class="experience-card" id="exp-item-1">
+            <div class="experience-card-date">2025 — Actualidad</div>
+            <div class="experience-content">
+              <h3 class="experience-card-title">Jefe del Departamento de Tecnología Educativa</h3>
+              <div class="experience-card-company">Politécnico Santiago Mariño Ext. Barinas</div>
+              <p class="experience-card-desc">
+                Dirección del mantenimiento preventivo y correctivo de la infraestructura institucional. Lidero la administración, mantenimiento y levantamiento de servidores corporativos bajo Windows Server y de almacenamiento/servicios (NAS/SAS) configurados en entornos Linux mediante distribuciones open-source y optimizadas como DietPi.
+              </p>
+              <p class="experience-card-desc" style="margin-top: 0.5rem;">
+                Desarrollo plataformas web y móviles internas, complementadas con flujos optimizados que incrementan la productividad académica y administrativa del departamento.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="experience-card" id="exp-item-2">
+            <div class="experience-card-date">2020 — Actualidad</div>
+            <div class="experience-content">
+              <h3 class="experience-card-title">Operador de Centro de Transmisión de Contingencia</h3>
+              <div class="experience-card-company">Consejo Nacional Electoral (CNE)</div>
+              <p class="experience-card-desc">
+                Supervisión técnica de transmisiones críticas de datos bajo altos estándares de redundancia y seguridad informática en entornos distribuidos bajo presión.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Competencias Section -->
+      <section class="skills-section" id="tech" aria-label="Competencias core">
+        <div class="section-header-mobile">
+          <h2 class="section-title-mobile">Competencias</h2>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Next.js -->
+          <div class="skill-chip" id="skill-next">
+            <div class="skill-chip-icon">
+              <i class="devicon-nextjs-plain"></i>
+            </div>
+            <span class="skill-chip-name">Next.js</span>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-chip" id="skill-js">
+            <div class="skill-chip-icon">
+              <i class="devicon-javascript-plain"></i>
+            </div>
+            <span class="skill-chip-name">JavaScript</span>
+          </div>
+
+          <!-- TypeScript -->
+          <div class="skill-chip" id="skill-ts">
+            <div class="skill-chip-icon">
+              <i class="devicon-typescript-plain"></i>
+            </div>
+            <span class="skill-chip-name">TypeScript</span>
+          </div>
+
+          <!-- Node.js -->
+          <div class="skill-chip" id="skill-nodejs">
+            <div class="skill-chip-icon">
+              <i class="devicon-nodejs-plain"></i>
+            </div>
+            <span class="skill-chip-name">Node.js</span>
+          </div>
+
+          <!-- Python -->
+          <div class="skill-chip" id="skill-python">
+            <div class="skill-chip-icon">
+              <i class="devicon-python-plain"></i>
+            </div>
+            <span class="skill-chip-name">Python</span>
+          </div>
+
+          <!-- C# -->
+          <div class="skill-chip" id="skill-csharp">
+            <div class="skill-chip-icon">
+              <i class="devicon-csharp-plain"></i>
+            </div>
+            <span class="skill-chip-name">C#</span>
+          </div>
+
+          <!-- Flutter -->
+          <div class="skill-chip" id="skill-flutter">
+            <div class="skill-chip-icon">
+              <i class="devicon-flutter-plain"></i>
+            </div>
+            <span class="skill-chip-name">Flutter</span>
+          </div>
+
+          <!-- Dart -->
+          <div class="skill-chip" id="skill-dart">
+            <div class="skill-chip-icon">
+              <i class="devicon-dart-plain"></i>
+            </div>
+            <span class="skill-chip-name">Dart</span>
+          </div>
+
+          <!-- Supabase -->
+          <div class="skill-chip" id="skill-supabase">
+            <div class="skill-chip-icon">
+              <i class="devicon-supabase-plain"></i>
+            </div>
+            <span class="skill-chip-name">Supabase</span>
+          </div>
+
+          <!-- Turso -->
+          <div class="skill-chip" id="skill-turso">
+            <div class="skill-chip-icon">
+              <i class="devicon-sqlite-plain"></i>
+            </div>
+            <span class="skill-chip-name">Turso</span>
+          </div>
+
+          <!-- MySQL -->
+          <div class="skill-chip" id="skill-mysql">
+            <div class="skill-chip-icon">
+              <i class="devicon-mysql-plain"></i>
+            </div>
+            <span class="skill-chip-name">MySQL</span>
+          </div>
+
+          <!-- SQL -->
+          <div class="skill-chip" id="skill-sql">
+            <div class="skill-chip-icon">
+              <i class="devicon-azuresqldatabase-plain"></i>
+            </div>
+            <span class="skill-chip-name">SQL</span>
+          </div>
+
+          <!-- HTML -->
+          <div class="skill-chip" id="skill-html">
+            <div class="skill-chip-icon">
+              <i class="devicon-html5-plain"></i>
+            </div>
+            <span class="skill-chip-name">HTML5</span>
+          </div>
+
+          <!-- Arduino -->
+          <div class="skill-chip" id="skill-arduino">
+            <div class="skill-chip-icon">
+              <i class="devicon-arduino-plain"></i>
+            </div>
+            <span class="skill-chip-name">Arduino</span>
+          </div>
+
+          <!-- Automatización con Python -->
+          <div class="skill-chip" id="skill-autopy">
+            <div class="skill-chip-icon">
+              <i class="devicon-python-plain"></i>
+            </div>
+            <span class="skill-chip-name">Aut. Python</span>
+          </div>
+
+          <!-- Automatización con VBA Excel -->
+          <div class="skill-chip" id="skill-autovba">
+            <div class="skill-chip-icon">
+              <i class="devicon-visualbasic-plain"></i>
+            </div>
+            <span class="skill-chip-name">Aut. VBA Excel</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos Section -->
+      <section class="projects-section" id="projects" aria-label="Proyectos destacados">
+        <div class="section-header-mobile">
+          <h2 class="section-title-mobile">Proyectos</h2>
+        </div>
+
+      <div class="projects-list">
+        <!-- Project 1 (Tienda de Café) -->
+        <article class="project-card" id="project-card-1">
+          <div class="project-card-image">
+            <img src="assets/cafe_preview.png" alt="Captura de pantalla de la Tienda de Café Premium de Jose Cruz">
+          </div>
+          <div class="project-details">
+            <div class="project-card-header">
+              <h3 class="project-card-title">Tienda de Café Premium</h3>
+              <div class="project-actions">
+                <a href="https://tienda-cafe-six.vercel.app/" class="project-action-link" target="_blank" rel="noopener noreferrer" aria-label="Abrir Demo en Vivo de Tienda de Café">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+            <p class="project-desc">
+              Una tienda en línea interactiva y elegante diseñada para ofrecer una experiencia fluida de exploración y compra de café de especialidad. Cualquier visitante puede interactuar directamente con los productos, navegar las categorías y realizar simulaciones y pruebas de flujo de compra en tiempo real.
+            </p>
+            <div style="margin-bottom: 1.25rem;">
+              <a href="https://tienda-cafe-six.vercel.app/" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; font-weight: 700; color: hsl(var(--accent)); display: inline-flex; align-items: center; gap: 0.4rem;">
+                Probar tienda en vivo
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+            <div class="project-card-tags">
+              <span class="project-card-tag">Next.js</span>
+              <span class="project-card-tag">TypeScript</span>
+              <span class="project-card-tag">Tailwind CSS</span>
+              <span class="project-card-tag">Vercel</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact" aria-label="Contacto directo">
+        <div class="section-header-mobile">
+          <h2 class="section-title-mobile">Contacto</h2>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 2.5rem;">
+          <p style="color: hsl(var(--text-secondary)); margin-bottom: 1rem; font-size: 1.05rem;">
+            ¿Tienes un proyecto en mente? Puedes usar el formulario o enviarme un correo electrónico a:
+          </p>
+          <a href="mailto:josemancruz.h@gmail.com" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; font-weight: 600; color: hsl(var(--text-primary)); text-decoration: none; padding: 0.75rem 1.5rem; background-color: hsl(var(--text-primary) / 0.05); border: 1px solid hsl(var(--border-color)); border-radius: 999px; transition: all 0.3s ease;" onmouseover="this.style.borderColor='hsl(var(--accent))'; this.style.color='hsl(var(--accent))'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='hsl(var(--border-color))'; this.style.color='hsl(var(--text-primary))'; this.style.transform='none';">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            josemancruz.h@gmail.com
+          </a>
+        </div>
+        
+        <div class="contact-card">
+          <form class="contact-form" id="contact-form" aria-label="Formulario de contacto">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Tu Nombre</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label">Tu Correo Electrónico</label>
+              <input type="email" id="form-email" class="form-input" placeholder="tu@correo.com" required>
+            </div>
+            <div class="form-group">
+              <label for="form-message" class="form-label">Mensaje</label>
+              <textarea id="form-message" class="form-input" placeholder="Hola Jose, me gustaría conversar sobre..." required></textarea>
+            </div>
+            <button type="submit" class="form-btn">Enviar Mensaje</button>
+          </form>
+        </div>
+      </section>
+      
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
