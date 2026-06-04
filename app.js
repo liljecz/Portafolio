@@ -170,4 +170,43 @@ document.addEventListener('DOMContentLoaded', () => {
       toast.classList.remove('show');
     }, 4000);
   }
+
+  // --- Image Modal (Lightbox) ---
+  const modal = document.getElementById("image-modal");
+  const img = document.getElementById("profile-img");
+  const modalImg = document.getElementById("expanded-img");
+  const closeBtn = document.querySelector(".close-modal");
+
+  if (modal && img && modalImg && closeBtn) {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex";
+      // Reflow for CSS transition
+      modal.offsetHeight;
+      modal.classList.add("show");
+      modalImg.src = img.src;
+    });
+
+    const closeModal = () => {
+      modal.classList.remove("show");
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 300);
+    };
+
+    closeBtn.addEventListener("click", closeModal);
+    
+    // Cerrar al dar clic fuera de la imagen
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Cerrar con tecla Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.classList.contains("show")) {
+        closeModal();
+      }
+    });
+  }
 });
